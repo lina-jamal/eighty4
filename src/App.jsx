@@ -10,6 +10,7 @@ function App() {
 
         <Route   element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route index element={<HomePage />} />
 
 
         </Route>
