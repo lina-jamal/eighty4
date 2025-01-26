@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+git config --global user.name "lina-jamal"
+git config --global user.email "linahjamal89@gmail.com"
 # dependencies
 /node_modules
 /.pnp
