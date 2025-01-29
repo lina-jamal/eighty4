@@ -1,2 +1,4 @@
-import Header from './header';
-export {Header}
+import Navbar from "./navbar";
+import Footer from "./footer";
+
+export { Navbar, Footer };

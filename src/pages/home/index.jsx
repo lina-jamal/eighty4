@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Wrapper } from "./style";
 
 function HomePage() {
   return (
-    <div>
-      Hello lofy
-    </div>
-  )
+    <Wrapper>
+      <hr /> home page
+    </Wrapper>
+  );
 }
 
-export default HomePage
+export default HomePage;

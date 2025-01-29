@@ -1,21 +1,17 @@
 import React from "react";
-import {  Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import Layout from "./layout";
-import { HomePage } from "./pages";
-import './theme'
+import { AboutPage, HomePage } from "./pages";
+import "./theme";
+
 function App() {
   return (
-
-      <Routes>
-
-        <Route   element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route index element={<HomePage />} />
-
-
-        </Route>
-      </Routes>
- 
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" index element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Route>
+    </Routes>
   );
 }
 
