@@ -8,7 +8,6 @@ const Wrapper = styled.div`
 `;
 
 const Page = styled.div`
-  margin-top: 100px;
 `;
 
 function Layout() {

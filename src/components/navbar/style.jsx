@@ -11,6 +11,7 @@ export const Wrapper = styled.nav`
   top: 0;
   left: 0;
   height: 100px;
+  z-index: 10;
 `;
 
 export const LogoBox = styled.div`
@@ -41,8 +42,8 @@ export const SearchBox = styled.label`
   height: 35px;
   border-radius: 18px;
   overflow: hidden;
-  border: 0.5px solid #c5c5c5;
-  background-color: #e3e1e1;
+  border: 0.5px solid #c5c5c590;
+  background-color: #e3e1e13b;
   max-width: 600px;
 
   ._icon {
@@ -52,7 +53,7 @@ export const SearchBox = styled.label`
     justify-content: center;
 
     svg {
-      color: #fff;
+      color: #ffffffcf;
     }
   }
 
@@ -62,9 +63,10 @@ export const SearchBox = styled.label`
     outline: none;
     border: none;
     font-family: "Roboto";
+    color: #ffffffcf;
 
     &::placeholder {
-      color: #fff;
+      color: #ffffffcf;
       opacity: 1; /* Firefox */
     }
 
