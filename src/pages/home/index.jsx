@@ -9,6 +9,9 @@ import {
   ContentServices,
   HeaderContent,
   HeaderHome,
+  LayerAirTickets,
+  LayerAirTicketsBackgoundImage,
+  LayerAirTicketsContent,
   LayerBackgoundImage,
   LayerCardTour,
   LayerHeaderContent,
@@ -80,11 +83,7 @@ const CardPrograms = ({ data }) => {
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style }}
-      onClick={onClick}
-    >
+    <div className={className} style={{ ...style }} onClick={onClick}>
       <FaArrowRightLong />
     </div>
   );
@@ -93,11 +92,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, }}
-      onClick={onClick}
-    >
+    <div className={className} style={{ ...style }} onClick={onClick}>
       <FaArrowLeftLong />
     </div>
   );
@@ -443,7 +438,21 @@ function HomePage() {
 
       {/* Air Tickets */}
 
-      <AirTicketsSection>sdsdgsdg</AirTicketsSection>
+      <AirTicketsSection>
+        <LayerAirTicketsBackgoundImage>
+          <img src="/files/airticket.png" alt="" />
+        </LayerAirTicketsBackgoundImage>
+        <LayerAirTicketsContent>
+          <h2>Air Tickets</h2>
+          <p>
+            Start your first trip with us, contact us, <span>Book</span> your{" "}
+            <span>Ticket </span> and <span>Enjoy</span>.
+          </p>
+          <a target="_blank" href="/">
+            Contact us
+          </a>
+        </LayerAirTicketsContent>
+      </AirTicketsSection>
 
       <WhyUsSection>
         <WhyusMountain>
@@ -452,7 +461,7 @@ function HomePage() {
 
         <LeftSideWhyUs>
           <p>Why Choose us</p>
-          
+
           <span>
             Discover the enchanting beauty of Sri Lanka with our expertly
             curated tours. From pristine beaches to lush tea plantations,

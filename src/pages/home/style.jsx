@@ -42,7 +42,6 @@ export const HeaderContent = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-
 `;
 
 export const LayerBackgoundImage = styled.div`
@@ -438,7 +437,80 @@ export const CardService = styled.div`
   }
 `;
 
-export const AirTicketsSection = styled.div``;
+export const AirTicketsSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+`;
+export const LayerAirTicketsBackgoundImage = styled.div`
+ height: 100%;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #00000082, #00000038);
+    z-index: 1;
+  }
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+`;
+export const LayerAirTicketsContent = styled.div`
+ 
+
+  position: absolute;
+  padding:2rem;
+  z-index: 10;
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+
+  h2 {
+    font-family: "EB Garamond";
+    font-size: 3rem;
+    
+ 
+  }
+  span {
+      color: #fa7436;
+    }
+  p {
+ 
+    font-size: 2.8rem;
+    font-family: "EB Garamond";
+  }
+
+  a {
+    display: flex;
+    border-radius: 6px;
+    background-color: #fa7436;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto";
+    padding: 12px 26px;
+    align-items: center;
+    gap: 4px;
+
+    &:hover {
+      background-color: #e96224;
+    }
+
+`;
 
 export const WhyUsSection = styled.div`
   position: relative;
