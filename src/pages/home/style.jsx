@@ -137,6 +137,7 @@ export const TitlesOfPrograms = styled.div`
     font-size: 1.2rem;
     line-height: 2rem;
     color: #626262;
+    font-family: "Roboto";
   }
 `;
 
@@ -279,5 +280,248 @@ export const CardProgramsContainer = styled.div`
         }
       }
     }
+  }
+`;
+
+export const ToursSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
+
+export const ToursCards = styled.div`
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+`;
+
+export const CardTour = styled.div`
+  position: relative;
+  height: 300px;
+  max-width: 400px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const LayerCardTour = styled.div`
+  background: linear-gradient(to bottom, #0000009b, #00000067);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  padding: 3rem;
+  gap: 1rem;
+
+  &:hover {
+    background: linear-gradient(to bottom, #00000053, #00000037);
+  }
+
+  span {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  a {
+    background-color: #71c563;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto";
+    border-radius: 6px;
+    padding: 10px 16px;
+
+    &.active {
+      background-color: #fa7436;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+`;
+
+export const ServicesSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
+
+export const ContentServices = styled.div`
+  display: flex;
+`;
+
+export const CenterServices = styled.div`
+  padding: 2rem;
+  min-width: 250px;
+  min-height: 400px;
+
+  .inside {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    padding: 2px;
+    padding-bottom: 0;
+    background: linear-gradient(to bottom, #fa7436, #c2b4ae);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      background-color: #fff;
+      width: 100%;
+      height: 5px;
+      left: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border: 8px solid #fff;
+    }
+  }
+`;
+
+export const RightServices = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  text-align: start;
+`;
+
+export const LeftServices = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  text-align: end;
+`;
+
+export const CardService = styled.div`
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  span {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 1rem;
+  }
+
+  p {
+    font-family: "Roboto";
+    color: #b5b5b5;
+    font-size: 0.9rem;
+    text-align: start;
+  }
+`;
+
+export const AirTicketsSection = styled.div``;
+
+export const WhyUsSection = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+`;
+
+export const LeftSideWhyUs = styled.div`
+  position: relative;
+  z-index: 10;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  span {
+    font-family: "Roboto";
+    color: #626262;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  img {
+    border-radius: 1.2rem;
+  }
+`;
+
+export const RightSideWhyus = styled.div`
+  position: relative;
+  z-index: 10;
+  width: 40%;
+  display: grid;
+  gap: 1rem;
+  padding-top: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+`;
+
+export const CardOverview = styled.div`
+  min-width: 48%;
+  min-height: 40%;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem;
+  gap: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  span {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  p {
+    color: #b5b5b5;
+    font-family: "Roboto";
+    line-height: 1.6rem;
+  }
+`;
+
+export const WhyusMountain = styled.div`
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    opacity: 0.1;
+    transform: translateX(-25%) scale(1.8);
   }
 `;
