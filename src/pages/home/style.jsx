@@ -41,6 +41,8 @@ export const HeaderContent = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
+
 `;
 
 export const LayerBackgoundImage = styled.div`
