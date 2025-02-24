@@ -1,6 +1,8 @@
 import React from "react";
 import {
   AirTicketsSection,
+  BlosCards,
+  CardBlog,
   CardOverview,
   CardProgramsContainer,
   CardService,
@@ -13,10 +15,13 @@ import {
   LayerAirTicketsBackgoundImage,
   LayerAirTicketsContent,
   LayerBackgoundImage,
+  LayerBlogs,
+  LayerCardBlogs,
   LayerCardTour,
   LayerHeaderContent,
   LeftServices,
   LeftSideWhyUs,
+  NewsAndBlogsSection,
   ProgramsCarousel,
   ProgramsSection,
   RightServices,
@@ -585,6 +590,44 @@ function HomePage() {
           </CardOverview>
         </RightSideWhyus>
       </WhyUsSection>
+      <NewsAndBlogsSection>
+        <TitlesOfPrograms>
+          <h3>Amazing News & Blog For Every Single Update</h3>
+  
+        </TitlesOfPrograms>
+
+        <BlosCards>
+          <CardBlog>
+            <img src="/files/blog-1.png" alt="" />
+            <LayerCardBlogs>
+              <span>It is a long established fact that a reader will be distracted</span>
+              <p>It is a long established fact that a reader</p>
+              <a href="/" >
+              Read More
+              </a>
+            </LayerCardBlogs>
+          </CardBlog>
+
+          <CardBlog>
+            <img src="/files/blog-2.png" alt="" />
+            <LayerCardBlogs>
+              <span>It is a long established fact that a reader will be distracted</span>
+              <p>It is a long established fact that a reader</p>
+              <a href="/">Read More</a>
+            </LayerCardBlogs>
+          </CardBlog>
+
+          <CardBlog>
+            <img src="/files/blog-3.png" alt="" />
+            <LayerCardBlogs>
+              <span>It is a long established fact that a reader will be distracted</span>
+              <p>It is a long established fact that a reader</p>
+              <a href="/">Read More</a>
+            </LayerCardBlogs>
+          </CardBlog>
+        </BlosCards>
+      </NewsAndBlogsSection>
+
     </Wrapper>
   );
 }

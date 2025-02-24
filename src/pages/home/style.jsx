@@ -597,3 +597,80 @@ export const WhyusMountain = styled.div`
     transform: translateX(-25%) scale(1.8);
   }
 `;
+export const NewsAndBlogsSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+`;
+
+export const BlosCards = styled.div`
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+`;
+export const CardBlog = styled.div`
+  position: relative;
+  height: 300px;
+  max-width: 400px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 2rem;
+  background: #882121;
+  /* flex-direction: column; */
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const LayerCardBlogs = styled.div`
+  background: linear-gradient(to bottom, #0000009b, #00000067);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  padding: 3rem;
+  gap: 1rem;
+
+  &:hover {
+    background: linear-gradient(to bottom, #00000053, #00000037);
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    font-family: "EB Garamond";
+  }
+
+  span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "Roboto";
+  }
+  p {
+    font-size: 1rem;
+    font-family: "Roboto";
+    color: #b5b5b5;
+  }
+
+  a {
+    /* background-color: #71c563; */
+    color: #6a6a6a;
+    text-decoration: none;
+    font-family: "Roboto";
+    padding: 10px 16px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+`;
