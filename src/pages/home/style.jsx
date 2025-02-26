@@ -439,16 +439,18 @@ export const CardService = styled.div`
 
 export const AirTicketsSection = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
   width: 100%;
   position: relative;
+  z-index: 10;
+  height: 450px;
 `;
+
 export const LayerAirTicketsBackgoundImage = styled.div`
- height: 100%;
-  position: relative;
   width: 100%;
+  position: relative;
+  height: 100%;
 
   &::before {
     content: "";
@@ -457,22 +459,24 @@ export const LayerAirTicketsBackgoundImage = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #00000082, #00000038);
+    background: linear-gradient(to bottom, #000000a6, #0000006c);
     z-index: 1;
   }
-img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-`;
-export const LayerAirTicketsContent = styled.div`
- 
 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+export const LayerAirTicketsContent = styled.div`
   position: absolute;
-  padding:2rem;
+  padding: 2rem;
   z-index: 10;
-  max-width: 500px;
-  width: 90%;
+  max-width: 95%;
+  min-width: 350px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -483,14 +487,13 @@ export const LayerAirTicketsContent = styled.div`
   h2 {
     font-family: "EB Garamond";
     font-size: 3rem;
-    
- 
   }
+
   span {
-      color: #fa7436;
-    }
+    color: #fa7436;
+  }
+
   p {
- 
     font-size: 2.8rem;
     font-family: "EB Garamond";
   }
@@ -509,7 +512,7 @@ export const LayerAirTicketsContent = styled.div`
     &:hover {
       background-color: #e96224;
     }
-
+  }
 `;
 
 export const WhyUsSection = styled.div`
@@ -590,11 +593,13 @@ export const WhyusMountain = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
 
   img {
+    width: max-content;
+    height: 100%;
     opacity: 0.1;
-    transform: translateX(-25%) scale(1.8);
+    transform: translateX(-25%) translateY(20%) scale(1.8);
   }
 `;
 export const NewsAndBlogsSection = styled.div`
@@ -602,72 +607,85 @@ export const NewsAndBlogsSection = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+
+  span {
+    font-size: 2.5rem;
+  }
 `;
 
-export const BlosCards = styled.div`
-  justify-content: space-evenly;
+export const HeadOfBlogs = styled.div`
   display: flex;
-  width: 100%;
   gap: 1rem;
+
+  svg {
+    max-height: 120px;
+  }
 `;
+
+export const CardBlogBorder = styled.div`
+  padding: 1rem;
+`;
+
 export const CardBlog = styled.div`
   position: relative;
-  height: 300px;
-  max-width: 400px;
-  border-radius: 6px;
-  overflow: hidden;
-  padding: 2rem;
-  background: #882121;
-  /* flex-direction: column; */
+  background-color: #fff;
+  box-shadow: 0 1px 5px #00000032;
+  border-radius: 10px;
+  padding: 1rem;
+`;
+
+export const ImageCard = styled.div`
+  position: relative;
+
+  span {
+    background-color: #71c563;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-family: "Roboto";
+    width: 35px;
+    padding: 6px;
+    text-align: center;
+
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: 0 1px 5px #e4e4e4a1;
+  }
 
   img {
     width: 100%;
-    height: 100%;
+    height: 277px;
   }
 `;
 
-export const LayerCardBlogs = styled.div`
-  background: linear-gradient(to bottom, #0000009b, #00000067);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+export const ContentCardBlog = styled.div`
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  color: #fff;
+  color: #000;
   justify-content: center;
-  padding: 3rem;
   gap: 1rem;
+  padding-top: 1rem;
 
-  &:hover {
-    background: linear-gradient(to bottom, #00000053, #00000037);
-  }
-
-  h3 {
-    font-size: 2.2rem;
-    font-family: "EB Garamond";
+  p {
+    font-size: 1.1rem;
+    font-family: "Roboto";
   }
 
   span {
-    font-size: 1.1rem;
-    font-weight: 600;
-    font-family: "Roboto";
-  }
-  p {
-    font-size: 1rem;
-    font-family: "Roboto";
+    font-size: 0.9rem;
     color: #b5b5b5;
+    font-family: "Roboto";
   }
 
   a {
-    /* background-color: #71c563; */
     color: #6a6a6a;
     text-decoration: none;
     font-family: "Roboto";
-    padding: 10px 16px;
 
     &:hover {
       opacity: 0.9;

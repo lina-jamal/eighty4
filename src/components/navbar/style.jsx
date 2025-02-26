@@ -12,6 +12,7 @@ export const Wrapper = styled.nav`
   left: 0;
   height: 100px;
   z-index: 10;
+  background-color: #777777;
 `;
 
 export const LogoBox = styled.div`

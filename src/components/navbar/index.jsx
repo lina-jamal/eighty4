@@ -39,7 +39,7 @@ function Navbar() {
           <Link to="/">Tours</Link>
         </li>
         <li>
-          <Link to="/">Air Tickets</Link>
+          <Link to="/air-tickets">Air Tickets</Link>
         </li>
         <li>
           <Link to="/"> Tips</Link>

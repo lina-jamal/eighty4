@@ -1,4 +1,5 @@
 import HomePage from "./home";
 import AboutPage from "./about";
+import AirTicketsPage from "./AirTickets";
 
-export { HomePage, AboutPage };
+export { HomePage, AboutPage, AirTicketsPage };
