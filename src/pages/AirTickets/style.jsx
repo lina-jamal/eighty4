@@ -23,7 +23,6 @@ export const ContactOfAirTicket = styled.div`
   flex-direction: column;
   gap: 1rem;
   align-items: start;
-  gap: 2rem;
 
   h3 {
     font-size: 2.2rem;
@@ -123,4 +122,21 @@ font-weight:300px;
 export const AirTicketLetsTalk = styled.div`
   background-color:
  #FFFFFF;
+ display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+/* width: 60%; */
+
+  h3{
+    font-size: 2rem;
+    font-family: "EB Garamond ";
+
+  }
+  p{
+    font-family: "Roboto";
+    font-size: 1rem;
+    line-height: 1.6rem;
+font-weight:300px;
+  }
 `

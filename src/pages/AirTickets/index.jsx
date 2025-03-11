@@ -91,7 +91,10 @@ function AirTicketsPage() {
           />
         </svg>
       </AirTicketContactUs>
-      <AirTicketLetsTalk></AirTicketLetsTalk>
+      <AirTicketLetsTalk>
+        <h3>Let’s Talk Our Expert Travel Guides</h3>
+        <p>Our dedicated support team is always ready to assist you with any questions or issues, offering prompt and personalized solutions to meet your needs.</p>
+         </AirTicketLetsTalk>
     </Wrapper>
   );
 }
