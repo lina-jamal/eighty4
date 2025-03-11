@@ -7,18 +7,17 @@ export const Wrapper = styled.div`
   background-color: #fff;
   margin-top: 100px;
 `;
+
 export const AirTicketSection = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  /* flex-direction: column; */
   align-items: center;
-
   gap: 1rem;
 `;
+
 export const ContactOfAirTicket = styled.div`
   width: 50%;
-  /* max-width: 500px; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -46,29 +45,30 @@ export const ContactOfAirTicket = styled.div`
 `;
 export const ImageOfAirTicket = styled.div`
   display: flex;
-  /* width: 50%; */
   width: 500px;
-  height: 300px;
-`;
-export const AirTicketBackground = styled.div`
-  //   position: absolute;
-  //   /* z-index: 1; */
-  //   /* top: 0; */
-  //   right: 0;
-  //   /* width: 100%;
-  //   height: 100%; */
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-  //   img {
-  //     width: max-content;
-  //     /* height: 100%; */
-  //     opacity: 0.1;
-  //     transform: translateX(-25%) translateY(20%) scale(1.8);
-  //   }
+  img {
+    position: absolute;
+
+    &._plane {
+      z-index: 10;
+    }
+    &._bg {
+      z-index: 1;
+    }
+    &._borders {
+      z-index: 0;
+    }
+  }
 `;
+
 export const AirTicketContactUs = styled.div`
   display: flex;
   gap: 2rem;
-  /* justify-content: center; */
   align-items: end;
   background-color: #1d231f;
 
@@ -84,22 +84,21 @@ export const AirTicketContactUsContant = styled.div`
   gap: 2rem;
   padding: 2rem;
   max-width: 60%;
-  color:#FFFFFF;
+  color: #ffffff;
+  text-align: center;
 
-  /* justify-content: center; */
-
-  h2{
+  h2 {
     font-size: 2rem;
     font-family: "EB Garamond ";
-
   }
-  p{
+
+  p {
     font-family: "Roboto";
     font-size: 1rem;
     line-height: 1.6rem;
-font-weight:300px;
+    font-weight: 300px;
   }
-  span{
+  span {
     font-size: 2rem;
     font-family: "EB Garamond ";
   }
@@ -120,23 +119,21 @@ font-weight:300px;
   }
 `;
 export const AirTicketLetsTalk = styled.div`
-  background-color:
- #FFFFFF;
- display: flex;
+  background-color: #ffffff;
+  display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-/* width: 60%; */
+  /* width: 60%; */
 
-  h3{
+  h3 {
     font-size: 2rem;
     font-family: "EB Garamond ";
-
   }
-  p{
+  p {
     font-family: "Roboto";
     font-size: 1rem;
     line-height: 1.6rem;
-font-weight:300px;
+    font-weight: 300px;
   }
-`
+`;

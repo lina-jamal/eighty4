@@ -4,11 +4,10 @@ import { Footer, Navbar } from "../components";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background-color: #ffd8d8;
+  background-color: #fff;
 `;
 
-const Page = styled.div`
-`;
+const Page = styled.div``;
 
 function Layout() {
   return (

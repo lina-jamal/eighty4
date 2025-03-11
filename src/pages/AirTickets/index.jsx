@@ -4,7 +4,6 @@ import {
   ImageOfAirTicket,
   ContactOfAirTicket,
   Wrapper,
-  AirTicketBackground,
   AirTicketContactUs,
   AirTicketContactUsContant,
   AirTicketLetsTalk,
@@ -18,6 +17,7 @@ function AirTicketsPage() {
           <h3>
             Air Tickets <br /> <span> 84 </span>Routes to Paradise
           </h3>
+
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
@@ -26,13 +26,12 @@ function AirTicketsPage() {
             here', making it look like readable English
           </p>
         </ContactOfAirTicket>
+
         <ImageOfAirTicket>
-          {" "}
-          <img src="/files/airTicket-1.png" alt="" />
+          <img className="_plane" src="/files/airTicket-1.png" alt="" />
+          <img className="_bg" src="/files/airTicket-2.png" alt="" />
+          <img className="_borders" src="/files/borders_airstikt.png" alt="" />
         </ImageOfAirTicket>
-        {/* <AirTicketBackground>
-          <img src="/files/airTicket-2.png" alt="" />
-        </AirTicketBackground> */}
       </AirTicketSection>
 
       <AirTicketContactUs>
@@ -74,6 +73,7 @@ function AirTicketsPage() {
             Contact us
           </a>
         </AirTicketContactUsContant>
+
         <svg
           width="182"
           height="183"
@@ -93,8 +93,12 @@ function AirTicketsPage() {
       </AirTicketContactUs>
       <AirTicketLetsTalk>
         <h3>Let’s Talk Our Expert Travel Guides</h3>
-        <p>Our dedicated support team is always ready to assist you with any questions or issues, offering prompt and personalized solutions to meet your needs.</p>
-         </AirTicketLetsTalk>
+        <p>
+          Our dedicated support team is always ready to assist you with any
+          questions or issues, offering prompt and personalized solutions to
+          meet your needs.
+        </p>
+      </AirTicketLetsTalk>
     </Wrapper>
   );
 }

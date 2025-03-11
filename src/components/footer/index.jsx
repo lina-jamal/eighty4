@@ -1,66 +1,112 @@
 import React from "react";
-import { FooterContent, FooterEnd, FooterSection, LogoBox, Wrapper } from "./style";
+import {
+  BoxMail,
+  ContactsLines,
+  ContentMail,
+  FooterContent,
+  FooterEnd,
+  FooterSection,
+  LogoBox,
+  SocialMedia,
+  Wrapper,
+} from "./style";
 import logo from "../../assets/icons/logo.png";
 
 function Footer() {
   return (
     <Wrapper>
+      <BoxMail>
+        <ContentMail>
+          <br />
+          dikv dfhdfh
+          <br />
+          .pdfhdfh
+          <br />
+          <p>
+            dfhdfh
+            <br />
+          </p>
+        </ContentMail>
+      </BoxMail>
       <FooterSection>
         <FooterContent>
-        <LogoBox>
-        <img src={logo} alt="logo-Eighty4" />
-          <span>Eighty4</span>
+          <LogoBox>
+            <img src={logo} alt="logo-Eighty4" />
+            <span>Eighty4</span>
           </LogoBox>
+
           <p>
             Explore majestic Sri Lanka with our epic travel packages, from
             bustling cities to breathtaking beaches and landscapes!
           </p>
-        </FooterContent>{" "}
+        </FooterContent>
+
         <FooterContent>
-          <span>Hours Work</span>
-          <p>
-            Monday - Friday <br />
-            9am - 5pm
-          </p>
-        </FooterContent>{" "}
+          <span>Work Hours & Days</span>
+
+          <div>
+            <p> Monday - Friday</p>
+            <p>9am - 5pm</p>
+          </div>
+        </FooterContent>
+
         <FooterContent>
           <span>Location</span>
-          <p>
-            Corporate Office:
-            <br /> 310, Deans Road,
-            <br /> Colombo 01000, Sri Lanka
+
+          <div>
+            <p>Corporate Office:</p>
+            <p>310, Deans Road,</p>
+            <p>Colombo 01000, Sri Lanka</p>
             <br />
-            <br />
-            Reg. Office:
-            <br /> 60, Mosque Road,
-            <br /> Beruwala 12070, Sri Lanka
-          </p>
-        </FooterContent>{" "}
+            <p>Reg. Office:</p>
+            <p>60, Mosque Road,</p>
+            <p>Beruwala 12070, Sri Lanka</p>
+          </div>
+        </FooterContent>
+
         <FooterContent>
           <span>Contact Info</span>
-          <p>
-            hi@eighty4.global <br />
-            +94 7779 79601 <br />
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="15" cy="15" r="15" fill="#D9D9D9" fill-opacity="0.24"/>
-<path d="M14.4999 13.1158C13.1843 13.1158 12.1157 14.1844 12.1157 15.5C12.1157 16.8156 13.1843 17.8868 14.4999 17.8868C15.8155 17.8868 16.8867 16.8156 16.8867 15.5C16.8867 14.1844 15.8155 13.1158 14.4999 13.1158Z" fill="white"/>
-<path d="M18.0984 9H10.9016C9.3026 9 8 10.3026 8 11.9016V19.0984C8 20.7 9.3026 22 10.9016 22H18.0984C19.7 22 21 20.7 21 19.0984V11.9016C21 10.3026 19.7 9 18.0984 9ZM14.5 19.712C12.1782 19.712 10.288 17.8218 10.288 15.5C10.288 13.1782 12.1782 11.2906 14.5 11.2906C16.8218 11.2906 18.712 13.1782 18.712 15.5C18.712 17.8218 16.8218 19.712 14.5 19.712ZM18.8004 12.055C18.309 12.055 17.9086 11.6572 17.9086 11.1658C17.9086 10.6744 18.309 10.274 18.8004 10.274C19.2918 10.274 19.6922 10.6744 19.6922 11.1658C19.6922 11.6572 19.2918 12.055 18.8004 12.055Z" fill="white"/>
-</svg>
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="15" cy="15" r="15" fill="#D9D9D9" fill-opacity="0.24"/>
-<path d="M12.9524 16.3379H11.3417C11.0814 16.3379 11 16.2403 11 15.9962V14.0275C11 13.7672 11.0976 13.6859 11.3417 13.6859H12.9524V12.2541C12.9524 11.6033 13.0663 10.985 13.3917 10.4155C13.7334 9.82979 14.2215 9.4393 14.8398 9.21151C15.2466 9.06508 15.6533 9 16.0926 9H17.6871C17.9149 9 18.0125 9.09762 18.0125 9.32541V11.1802C18.0125 11.408 17.9149 11.5056 17.6871 11.5056C17.2478 11.5056 16.8085 11.5056 16.3692 11.5219C15.9299 11.5219 15.7021 11.7334 15.7021 12.189C15.6859 12.6771 15.7021 13.1489 15.7021 13.6533H17.5895C17.8498 13.6533 17.9474 13.7509 17.9474 14.0113V15.98C17.9474 16.2403 17.8661 16.3217 17.5895 16.3217H15.7021V21.6258C15.7021 21.9024 15.6208 22 15.3279 22H13.2941C13.0501 22 12.9524 21.9024 12.9524 21.6583V16.3379Z" fill="white"/>
-</svg>
 
+          <ContactsLines>
+            <a href="mailto:hi@eighty4.global">hi@eighty4.global</a>
+            <a href="tel:+94 7779 79601">+94 7779 79601</a>
+          </ContactsLines>
 
-          </p>
+          <SocialMedia>
+            <a href="/">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0984 0H2.9016C1.3026 0 0 1.3026 0 2.9016V10.0984C0 11.7 1.3026 13 2.9016 13H10.0984C11.7 13 13 11.7 13 10.0984V2.9016C13 1.3026 11.7 0 10.0984 0ZM6.5 10.712C4.1782 10.712 2.288 8.8218 2.288 6.5C2.288 4.1782 4.1782 2.2906 6.5 2.2906C8.8218 2.2906 10.712 4.1782 10.712 6.5C10.712 8.8218 8.8218 10.712 6.5 10.712ZM10.8004 3.055C10.309 3.055 9.9086 2.6572 9.9086 2.1658C9.9086 1.6744 10.309 1.274 10.8004 1.274C11.2918 1.274 11.6922 1.6744 11.6922 2.1658C11.6922 2.6572 11.2918 3.055 10.8004 3.055Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+
+            <a href="/">
+              <svg
+                width="8"
+                height="13"
+                viewBox="0 0 8 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.95244 7.33792H0.341677C0.0813517 7.33792 0 7.2403 0 6.99625V5.02753C0 4.76721 0.0976221 4.68586 0.341677 4.68586H1.95244V3.25407C1.95244 2.60325 2.06633 1.98498 2.39174 1.41552C2.73342 0.829787 3.22153 0.439299 3.8398 0.211514C4.24656 0.0650812 4.65332 0 5.09262 0H6.68711C6.91489 0 7.01251 0.097622 7.01251 0.325407V2.18023C7.01251 2.40801 6.91489 2.50563 6.68711 2.50563C6.24781 2.50563 5.80851 2.50563 5.36921 2.5219C4.92991 2.5219 4.70213 2.73342 4.70213 3.18899C4.68586 3.6771 4.70213 4.14894 4.70213 4.65332H6.58949C6.84981 4.65332 6.94743 4.75094 6.94743 5.01126V6.97998C6.94743 7.2403 6.86608 7.32165 6.58949 7.32165H4.70213V12.6258C4.70213 12.9024 4.62078 13 4.32791 13H2.29412C2.05006 13 1.95244 12.9024 1.95244 12.6583V7.33792Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </SocialMedia>
         </FooterContent>
-      
-
       </FooterSection>
-      <hr/>
-      <FooterEnd>
-     
 
+      <FooterEnd>
         <p>Copyright @ Eighty4 2024. All Rights Reserved.</p>
       </FooterEnd>
     </Wrapper>
